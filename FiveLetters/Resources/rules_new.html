@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: transparent;
+        }
+        h1 {
+            color: #2C3E50;
+            border-bottom: 2px solid #3498DB;
+            padding-bottom: 10px;
+        }
+        .color-example {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+        .green {
+            background-color: #2ECC71;
+        }
+        .yellow {
+            background-color: #F1C40F;
+        }
+        .gray {
+            background-color: #95A5A6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Regeln - Die Grundlagen</h1>
+    
+    <p>Erraten Sie das 5-buchstabige Wort in maximal 6 Versuchen. Nach jedem Versuch zeigen die Farben der Buchstaben, wie nah Sie dran sind:</p>
+
+    <p>
+        <span class="color-example green"></span>
+        <strong>Grün:</strong> Buchstabe ist korrekt und an der richtigen Position
+    </p>
+    
+    <p>
+        <span class="color-example yellow"></span>
+        <strong>Gelb:</strong> Buchstabe ist im Wort, aber an falscher Position
+    </p>
+    
+    <p>
+        <span class="color-example gray"></span>
+        <strong>Grau:</strong> Buchstabe ist nicht im Wort
+    </p>
+
+    <h2>So spielen Sie:</h2>
+    <ol>
+        <li>Geben Sie ein 5-buchstabiges Wort ein</li>
+        <li>Drücken Sie Enter zum Bestätigen</li>
+        <li>Die Farben zeigen, wie gut Ihr Versuch war</li>
+        <li>Wiederholen Sie, bis Sie das Wort erraten haben!</li>
+    </ol>
+</body>
+</html> 

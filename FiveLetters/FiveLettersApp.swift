@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct FiveLettersApp: App {
+    @StateObject private var gameController = GameController.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            #if os(iOS)
+            ContentViewiOS()
+                .environmentObject(gameController)
+            #else
+            ContentViewMac()
+                .environmentObject(gameController)
+            #endif
         }
     }
 }

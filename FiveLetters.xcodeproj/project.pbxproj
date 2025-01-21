@@ -29,20 +29,23 @@
 		D0B704212D401EE2000C6FDA /* FiveLettersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveLettersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D0B704BB2D40230E000C6FDA /* Exceptions for "FiveLetters" folder in "FiveLetters" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			platformFiltersByRelativePath = {
+				Views/Mac/MacApp.swift = (macos, );
+			};
+			target = D0B704052D401EE1000C6FDA /* FiveLetters */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D0B704082D401EE1000C6FDA /* FiveLetters */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D0B704BB2D40230E000C6FDA /* Exceptions for "FiveLetters" folder in "FiveLetters" target */,
+			);
 			path = FiveLetters;
-			sourceTree = "<group>";
-		};
-		D0B7041A2D401EE2000C6FDA /* FiveLettersTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FiveLettersTests;
-			sourceTree = "<group>";
-		};
-		D0B704242D401EE2000C6FDA /* FiveLettersUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FiveLettersUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				D0B704082D401EE1000C6FDA /* FiveLetters */,
-				D0B7041A2D401EE2000C6FDA /* FiveLettersTests */,
-				D0B704242D401EE2000C6FDA /* FiveLettersUITests */,
 				D0B704072D401EE1000C6FDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +131,6 @@
 			dependencies = (
 				D0B704192D401EE2000C6FDA /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D0B7041A2D401EE2000C6FDA /* FiveLettersTests */,
-			);
 			name = FiveLettersTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +150,6 @@
 			);
 			dependencies = (
 				D0B704232D401EE2000C6FDA /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D0B704242D401EE2000C6FDA /* FiveLettersUITests */,
 			);
 			name = FiveLettersUITests;
 			packageProductDependencies = (
@@ -406,10 +401,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blomert.FiveLetters.FiveLetters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,10 +440,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blomert.FiveLetters.FiveLetters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
